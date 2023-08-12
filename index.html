@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='it'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Carta, Forbice e Sasso Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+        function TuoNome() {
+        nome = prompt ("Inserisci il tuo nome:", "");
+        if (nome == 'Tuo nome' || nome == null || nome == "") {
+        nome = "amico";
+        }
+        return (nome);
+        }
+        </script>
+</head>
+<body>
+    <h1>Carta, Forbice e Sasso</h1>
+    <p>Seleziona tra carta, forbice o sasso e vedi se sei riuscit* a battere il computer !</p>
+
+    <p><strong>Ricordati:</strong> La carta copre il sasso, il sasso rompe le forbici, le forbici tagliano la carta </p>
+
+    <script type="text/javascript">
+        document.write("Ciao " + TuoNome() + "!");
+        </script>
+
+    <div class='score'>
+
+    </div>
+    <div class='message'>
+
+    </div>
+    <button type='button'>Sasso</button>
+    <button type='button'>Carta</button>
+    <button type='button'>Forbici</button>
+    <script src="js/app.js"></script>
+</body>
+</html>
